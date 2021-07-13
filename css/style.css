@@ -1,0 +1,12 @@
+table.clubviejuners {
+    border-collapse: collapse;
+  }
+  
+  table.clubviejuners td {
+    width: 70px;
+    height: 40px;
+  }
+  
+  /* table.clubviejuners td.with-color {
+    background-color: crimson;
+  } */

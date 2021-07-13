@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Viejuners</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input:focus {
+          background-color: yellow;
+        }
+    </style>
+    <style>
+        div.a {
+          text-align: center;
+        }
+/*         
+        div.b {
+          text-align: left;
+        }
+        
+        div.c {
+          text-align: right;
+        } 
+        
+        div.d {
+          text-align: justify;
+        }  */
+        </style>
+</head>
+<body>
+<!-- Meter el título y los botones en la misma tabla para poderlo centrar -->
+    <div class="a">
+        <h1>Club Viejuners</h1><br>
+    </div>
+
+    <!-- <h1>Club Viejuners</h1><br>-->
+    <p>Bienvenido al club de los viejuners. Si quieres formar parte de nuestra comunidad, completa este formulario.</p> 
+    <h2>Formulario de admisión</h2>
+    <p>Cuéntanos acerca de ti. Completa cada uno de los campos siguientes:</p>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+    <fieldset> <!--Dibuja un marco para la información que contiene -->
+        <legend>Datos personales</legend>
+        <table class="clubviejuners">
+            <tr>
+                <td><label for="viejunoName">Nombre</label>:</td>
+                <td><input type="text" name="viejunoName" id="viejunoName" placeholder="Escribe tu nombre..." tabindex="2"><br></td>
+            </tr>
+            <tr>
+                <td><label for="viejunoFamilyName">Apellidos</label>:</td>
+                <td><input type="text" name="viejunoFamilyName" id="viejunoFamilyName" placeholder="Escribe tus apellidos..." tabindex="1"><br></td>
+            </tr>
+            <tr>
+                <td><label for="viejunoAge">Edad</label>:</td>
+                <td><input type="number" name="viejunoAge" id="viejunoAge" placeholder="Escribe tu edad..."></td>
+            </tr>
+            <tr>
+                <td><label for="viejunoGenderH">Sexo</label>:</td>
+                <td><input type="radio" name="viejunoGender" id="viejunoGenderH" value="H">Hombre<br>
+                    <input type="radio" name="viejunoGender" id="viejunoGenderM" value="M">Mujer<br>
+                    <input type="radio" name="viejunoGender" id="viejunoGenderO" value="O">Otro</td>
+            </tr>
+            <tr>
+                <td><label for="viejunoMyself">Me siento viejuno</label></td>
+                <td><input type="checkbox" name="viejunoMyself" id="viejunoMyself" value="ok"></td>
+            </tr>
+            <tr>
+                <td><label for="viejunoDescription">Escribe algo sobre ti:</label></td>
+                <td><textarea name="viejunoDescription" id="viejunoDescription" cols="30" rows="10"></textarea></td>
+            </tr>
+            <!-- <tr>
+                <td><input type="submit" value="Enviar datos"></td>
+                <td><input type="reset" value="Cancelar"></td>
+            </tr> -->
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Tus circunstancias</legend>
+            <table class="clubviejuners">
+                <tr>
+                    <td><label for="viejunoEmail">Correo electrónico</label></td>
+                    <td><input type="email" name="viejunoEmail" id="viejunoEmail" placeholder="Escribe tu correo..."></td>
+                </tr>
+                <tr>
+                    <td><label for="viejunoTel">Teléfono</label></td>
+                    <td><input type="tel" name="viejunoTel" id="viejunoTel" placeholder="Escribe tu teléfono..."  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><small>Formato: 123-45-678</small></td>
+                </tr>
+            </table>
+    </fieldset>   
+    <input type="submit" value="Enviar datos">
+    <input type="reset" value="Cancelar">
+    </form>
+</body>
+</html>
